@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectType="typeDynamicLibrary" ProjectCreator="Intel Fortran" Keyword="Dll" Version="11.0" ProjectIdGuid="{5EFCF46C-334E-4A11-95F5-E510924C1D67}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32" ConfigurationType="typeDynamicLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" EnableRecursion="true" Interfaces="true" SourceFileFormat="fileFormatFree" WarningsAsErrors="true" Diagnostics="diagnosticsShowAll" WarnInterfaces="true" Traceback="true" RuntimeChecks="rtChecksAll" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" OutputFile="..\..\python\$(ProjectName)_d.dll" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemWindows" ImportLibrary="..\..\python\$(ProjectName)_d.lib" LinkDLL="true"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32" ConfigurationType="typeDynamicLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" EnableRecursion="true" SourceFileFormat="fileFormatFree" WarningsAsErrors="true" Diagnostics="diagnosticsShowAll" OptDiagLevel="odlMaximum" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" OutputFile="..\..\python\$(ProjectName).dll" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemWindows" StackReserveSize="1000" ImportLibrary="..\..\python\$(ProjectName).lib" LinkDLL="true"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|x64" ConfigurationType="typeDynamicLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" EnableRecursion="true" Interfaces="true" SourceFileFormat="fileFormatFree" WarningsAsErrors="true" SV_Includes="true" Diagnostics="diagnosticsShowAll" WarnInterfaces="true" Traceback="true" RuntimeChecks="rtChecksAll" BoundsCheck="true" ArgTempCreatedCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" OutputFile="..\..\python\$(ProjectName)_d.dll" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemWindows" ImportLibrary="..\..\python\$(ProjectName)_d.lib" LinkDLL="true"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64" ConfigurationType="typeDynamicLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" EnableRecursion="true" SourceFileFormat="fileFormatFree" WarningsAsErrors="true" Diagnostics="diagnosticsShowAll" WarnDeclarations="true" WarnUnusedVariables="true" RuntimeChecks="rtChecksAll" ArgTempCreatedCheck="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" OutputFile="..\..\python\$(ProjectName).dll" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemWindows" StackReserveSize="1000" ImportLibrary="..\..\python\$(ProjectName).lib" LinkDLL="true"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="fibre">
+		<File RelativePath=".\k_bilinear_law.inc"/>
+		<File RelativePath=".\k_bilinear_law_error.inc"/>
+		<File RelativePath=".\k_fibre_damage.inc"/>
+		<File RelativePath=".\k_update_bilinear_law.inc"/></Filter>
+		<Filter Name="matrix">
+		<File RelativePath=".\k_check_puck_criterion.inc"/>
+		<File RelativePath=".\k_compute_bbox.inc"/>
+		<File RelativePath=".\k_cubic_law_error.inc"/>
+		<File RelativePath=".\k_cubic_shear.inc"/>
+		<File RelativePath=".\k_eval_puck_criterion.inc"/>
+		<File RelativePath=".\k_find_zeros.inc"/>
+		<File RelativePath=".\k_matrix_damage.inc"/>
+		<File RelativePath=".\k_min_brent.inc"/>
+		<File RelativePath=".\k_rottensor.inc"/></Filter>
+		<Filter Name="structures">
+		<File RelativePath=".\k_fill_material_elastic.inc"/>
+		<File RelativePath=".\k_fill_material_fibre.inc"/>
+		<File RelativePath=".\k_fill_material_matrix.inc"/>
+		<File RelativePath=".\k_fill_material_shear.inc"/>
+		<File RelativePath=".\k_print_bb.inc"/>
+		<File RelativePath=".\k_print_bilinear_damage.inc"/>
+		<File RelativePath=".\k_print_fstate.inc"/>
+		<File RelativePath=".\k_print_stensor.inc"/>
+		<File RelativePath=".\k_smatrix2state.inc"/>
+		<File RelativePath=".\k_state2smatrix.inc"/>
+		<File RelativePath=".\k_stensor2vec.inc"/>
+		<File RelativePath=".\k_vec2stensor.inc"/></Filter>
+		<Filter Name="test programs">
+		<File RelativePath=".\k_biaxial.for"/>
+		<File RelativePath=".\k_mf_analysis.for"/></Filter>
+		<Filter Name="tools">
+		<File RelativePath=".\k_char_length.inc"/>
+		<File RelativePath=".\k_compute_c.inc"/>
+		<File RelativePath=".\k_debug_matlab.inc"/>
+		<File RelativePath=".\k_effective_stress.inc"/>
+		<File RelativePath=".\k_element_deletion.inc"/>
+		<File RelativePath=".\k_nl_shear_1d.inc"/>
+		<File RelativePath=".\k_print_input.inc"/>
+		<File RelativePath=".\k_utilities.for"/></Filter>
+		<File RelativePath=".\k_abq_vars.inc"/>
+		<File RelativePath=".\k_idm.inc"/>
+		<File RelativePath=".\k_prototypes.inc"/>
+		<File RelativePath=".\vaba_param.inc"/>
+		<File RelativePath=".\vumat.for"/>
+		<File RelativePath=".\vumatxargs.inc"/></Files>
+	<Globals/></VisualStudioProject>
