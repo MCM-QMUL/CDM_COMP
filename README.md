@@ -1,7 +1,7 @@
 # CDM_COMP
 Continuum Damage Mechanics of Composite Materials
 
-The code development was led by Prof. Brian G. Falzon. The contritutors are Donadon, M.V., Faggiani, A., Chiu, L.N., Boman, R., Tan, W.
+The code development was led by Prof. Brian G. Falzon. The contritutors are Donadon, M.V., Faggiani, A., Chiu, L.N., Boman, R., Tan, W. Liu, H. et al. 
 
 Video guidelines:
 
